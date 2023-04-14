@@ -16,7 +16,7 @@ const Card = () => {
           <h3 className="text-3xl pb-2 font-bold text-gray-700">
             Pastel
           </h3>
-          <div className='border-b w-[300px] lg:w-[250px] border-solid border-gray-400'></div>
+          <div className='border-b border-solid border-gray-400'></div>
         </div>
         <div className='flex items-center justify-around'>
           <p className="mt-1 text-base md:text-lg text-gray-500">R$ 15.00</p>
