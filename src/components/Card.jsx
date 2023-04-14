@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Product1 from '../assets/product-1.svg'
 import { BiCart, BiHeart } from 'react-icons/bi'
 
+
 const Card = () => {
+
   return (
     <div className="group relative">
       <div className="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md lg:aspect-none relative">
         <img src={Product1} alt='' className="object-center lg:h-full lg:w-full" />
         <div className="absolute top-3 left-2 bg-zinc-800 rounded-sm p-2  hover:bg-zinc-900/80 ">
-          <BiHeart size={32} color='white'/>
+          <BiHeart size={32} color='white' />
         </div>
       </div>
       <div className="mt-2 gap-2 flex flex-col">
