@@ -18,19 +18,20 @@ const CardProduct = () => {
 
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-2xl px-4 py-1 sm:px-6 sm:py-24 lg:max-w-6xl ">
+      <div className="mx-auto  px-5 py-6 sm:px-6 sm:py-24 lg:max-w-7xl ">
         <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {foods.map(food => (
             <div className="group relative" key={food.id}>
               <div className="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md lg:aspect-none relative">
-                <img src={food.image_url} alt='' className="object-center lg:h-full lg:w-full" />
+                <img src={food.image_url} alt='' className="object-center 
+                h-[200px] w-[300px]" />
                 <div className="absolute top-3 left-2 bg-zinc-800 rounded-sm p-2  hover:bg-zinc-900/80 ">
                   <BiHeart size={32} color='white' />
                 </div>
               </div>
               <div className="mt-2 gap-2 flex flex-col">
                 <div>
-                  <h3 className="text-3xl pb-2 font-bold text-gray-700">
+                  <h3 className="text-2xl pb-2 font-bold text-gray-700">
                     {food.name}
                   </h3>
                   <div className='border-b border-solid border-gray-400'></div>

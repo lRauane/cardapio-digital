@@ -12,7 +12,7 @@ const Banner = () => {
       width: '100%',
     }}>
       <div className='absolute inset-0 bg-black opacity-50'></div>
-      <div className='relative z-10 flex flex-col items-center justify-center h-full text-white gap-5'>
+      <div className='relative  flex flex-col items-center justify-center h-full text-white gap-5'>
         <h1 className='font-bold text-3xl md:text-5xl text-center'>Bem-vindo ao nosso cardápio digital!</h1>
         <p className='md:text-xl text-lg text-center'>Aqui você encontrará uma variedade de opções deliciosas para saciar sua fome.</p>
       </div>
