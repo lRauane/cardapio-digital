@@ -1,15 +1,15 @@
 import React from 'react';
 import product from '../assets/product-1.svg'
+import {  X } from '@phosphor-icons/react';
 
 const CartContent = () => {
   return (
     <div className='flex flex-col gap-5'>
-      <div className='flex items-start mt-3 gap-5 pb-3 border-b border-b-gray-700'>
-        <div>
+      <div className='flex items-start justify-between mt-3 gap-5 pb-3 border-b border-b-gray-700 items-end'>
+        <div className='flex gap-5'>
           <img className='w-[100px]' src={product} />
-        </div>
         <div>
-          <h2>Pastel de frango</h2>
+          <h2 className='font-bold'>Pastel de frango</h2>
           <p>R$ 35</p>
           <div class="flex gap-3 mt-3 items-center">
             <button class="bg-zinc-800 p-2 text-white w-10">-</button>
@@ -17,7 +17,10 @@ const CartContent = () => {
             <button class="bg-zinc-800 p-2 w-10  text-white">+</button>
           </div>
         </div>
-
+        </div>
+            <button>
+            <X size={32} color='red' weight="fill" />
+            </button>
       </div>
 
       <p>Valor total: <span className='text-red-500'>R$ 53</span></p>
