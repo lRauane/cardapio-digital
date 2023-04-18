@@ -20,13 +20,13 @@ const CartButton = () => {
         <Dialog.Portal>
           <Dialog.Overlay className="w-screen h-screen bg-black/40 fixed inset-0 " />
 
-          <Dialog.Content className="absolute p-10 bg-white rounded-2xl w-full max-w-md top-20 left-3/4 -translate-x-1/2 -translate-y-1/2">
-            <Dialog.Close className="absolute right-6 top-6 text-zinc-400 rounded-lg hover:text-zinc-200 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-zinc-900">
+          <Dialog.Content className="fixed p-5 right-0 top-0 h-full w-[300px] md:w-[600px] z-50 bg-white shadow-lg  transition-transform ease-out ">
+            <Dialog.Close className="absolute right-6 top-6 text-zinc-400 rounded-lg hover:text-zinc-200 focus:outline-none focus:ring-2 focus:ring-zinc-600 focus:ring-offset-2 focus:ring-offset-zinc-900">
               <X size={24} aria-label="Fechar" />
             </Dialog.Close>
 
             <Dialog.Title className="text-3xl leading-tight font-extrabold">
-              Criar tarefas
+              Carrinho
             </Dialog.Title>
 
             <CartContent />

@@ -4,6 +4,7 @@ import { BiCart, BiHeart } from 'react-icons/bi'
 
 const CardProduct = () => {
   const [foods, setFoods] = useState([]);
+  const [cart, setCart] = useState([])
 
   useEffect(() => {
     axios.get('http://localhost:3000/foods')
@@ -14,6 +15,10 @@ const CardProduct = () => {
         console.log(error);
       });
   }, []);
+
+  const addToCart = (food) => {
+    setCart([...cart, food])
+  }
 
 
   return (
@@ -38,7 +43,9 @@ const CardProduct = () => {
                 </div>
                 <div className='flex items-center justify-around'>
                   <span className="mt-1 text-base md:text-lg text-gray-500">R$ {food.price}</span>
-                  <a href='' className='bg-zinc-800 rounded-sm p-3 hover:bg-zinc-900/80 md:p-2'><BiCart color='white' size={32} /></a>
+                  <button onClick={() => addToCart(food)} className='bg-zinc-800 rounded-sm p-3 hover:bg-zinc-900/80 md:p-2'>
+                    <BiCart color='white' size={32} />
+                  </button>
                 </div>
               </div>
             </div>
