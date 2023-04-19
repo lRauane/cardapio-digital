@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { BiCart, BiHeart } from 'react-icons/bi'
+import api from '../services/api';
 
 const CardProduct = () => {
   const [foods, setFoods] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/foods')
-      .then(response => {
-        setFoods(response.data);
-      })
-      .catch(error => {
-        console.log(error);
-      });
+    async function fetchApi(){
+      const response = await api.get("/foods")
+      setFoods(response.data)
+    }
+    fetchApi()
   }, []);
 
 

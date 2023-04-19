@@ -1,5 +1,5 @@
 import React from 'react';
-import {CookingPot} from '@phosphor-icons/react' 
+import { CookingPot } from '@phosphor-icons/react'
 import Input from './Input';
 import IconsActions from './IconsActions';
 
@@ -11,8 +11,9 @@ const NavBar = () => {
           <CookingPot className='text-yellow-400' size={32} weight="fill" />
           <h1 className='font-bold'>Menu Smart</h1>
         </div>
-        <Input/>
-        <IconsActions/>
+        <Input />
+        <IconsActions />
+
       </nav>
     </div>
   );
