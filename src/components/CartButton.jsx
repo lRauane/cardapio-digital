@@ -4,7 +4,6 @@ import { X } from '@phosphor-icons/react';
 import { BiCart } from 'react-icons/bi';
 
 const CartButton = () => {
-
   return (
     <div>
       <Dialog.Root>

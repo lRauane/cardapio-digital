@@ -6,7 +6,7 @@ import IconsActions from './IconsActions';
 const NavBar = () => {
   return (
     <div>
-      <nav className='flex w-full items-center p-5 justify-around'>
+      <nav className='flex flex-col md:flex-row w-full items-center p-5 justify-around gap-5'>
         <div className="flex items-center gap-4">
           <CookingPot className='text-yellow-400' size={32} weight="fill" />
           <h1 className='font-bold'>Menu Smart</h1>

@@ -1,6 +1,5 @@
 import React from 'react';
 import product from '../assets/product-1.svg'
-import {  X } from '@phosphor-icons/react';
 
 const CartContent = () => {
   return (
@@ -18,14 +17,11 @@ const CartContent = () => {
           </div>
         </div>
         </div>
-            <button>
-            <X size={32} color='red' weight="fill" />
-            </button>
+
       </div>
 
       <p>Valor total: <span className='text-red-500'>R$ 53</span></p>
       <button className='bg-green-500 hover:bg-green-700 text-white p-2 rounded-sm'>Finalizar compra</button>
-
 
     </div>
   );
