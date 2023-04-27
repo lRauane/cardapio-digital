@@ -9,7 +9,7 @@ const CartButton = () => {
       <Dialog.Root>
         <Dialog.Trigger
           type="button"
-          className="bg-zinc-800 rounded-sm p-3 hover:bg-zinc-900/80 md:p-4"
+          className="bg-amber-400 rounded-sm p-3  hover:bg-amber-400/80 md:p-4"
         >
           <button>
             <BiCart size={27} color='white' />

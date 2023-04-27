@@ -17,9 +17,9 @@ const Categories = () => {
 
   return (
     <div className='flex w-full items-center mt-8 justify-center flex-wrap gap-5 lg:gap-20'>
-      <button className='bg-zinc-800 p-3 w-52 text-white rounded-lg'>Todos</button>
+      <button className='bg-yellow-500 p-3 w-52 text-white rounded-lg'>Todos</button>
       {categoriesItem.map(categorie => (
-        <button key={categorie.id} className='bg-zinc-800 p-3 w-52 text-white rounded-lg'>{categorie.title}</button>
+        <button key={categorie.id} className='bg-yellow-500/80 p-3 w-52 text-white rounded-lg'>{categorie.title}</button>
       ))
       }
     </div>

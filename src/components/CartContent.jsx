@@ -1,26 +1,23 @@
-import React from 'react';
-import product from '../assets/product-1.svg'
+import React, { useState } from 'react';
+import CartItem from './Cart/CartItemCard';
 
 const CartContent = () => {
+  const [cartItems, setCartItems] = useState([]);
+
+  const removeFromCart = item => {
+    const updatedCartItems = cartItems.filter(cartItem => cartItem.id !== item.id);
+    setCartItems(updatedCartItems);
+  };
+
   return (
     <div className='flex flex-col gap-5'>
       <div className='flex items-start justify-between mt-3 gap-5 pb-3 border-b border-b-gray-700 items-end'>
-        <div className='flex gap-5'>
-          <img className='w-[100px]' src={product} />
-        <div>
-          <h2 className='font-bold'>Pastel de frango</h2>
-          <p>R$ 35</p>
-          <div class="flex gap-3 mt-3 items-center">
-            <button class="bg-zinc-800 p-2 text-white w-10">-</button>
-            <div class="border p-2 w-10 text-center rounded-sm ">1</div>
-            <button class="bg-zinc-800 p-2 w-10  text-white">+</button>
-          </div>
-        </div>
-        </div>
-
+       {cartItems.map((cartItem) => (
+        <CartItem key={cartItem.id} cartItem={cartItem} onRemoveFromCart={removeFromCart}/>
+       ))}
       </div>
 
-      <p>Valor total: <span className='text-red-500'>R$ 53</span></p>
+      <p>Valor total: {cartItems.reduce((total, cartItem) => total + cartItem.price, 0)}</p>
       <button className='bg-green-500 hover:bg-green-700 text-white p-2 rounded-sm'>Finalizar compra</button>
 
     </div>
