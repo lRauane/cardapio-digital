@@ -1,6 +1,6 @@
 import React from 'react';
-import { BiHeart} from 'react-icons/bi'
-import CartButton from './CartButton';
+import { BiHeart } from 'react-icons/bi'
+import CartButton from '../Dialog/CartButton';
 
 const IconsActions = () => {
   return (

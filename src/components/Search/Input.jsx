@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BiSearch } from 'react-icons/bi'
-import api from '../services/api';
+import api from '../../services/api';
 
 const Input = () => {
   const [searchTerm, setSearchTerm] = useState('');

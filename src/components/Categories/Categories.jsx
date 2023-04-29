@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import api from '../services/api';
+import api from '../../services/api';
 
 const Categories = () => {
 
   const [categoriesItem, setCategoriesItem] = useState([]);
 
   useEffect(() => {
-    async function fetchApi(){
+    async function fetchApi() {
       const response = await api.get("/categories")
       setCategoriesItem(response.data)
     }

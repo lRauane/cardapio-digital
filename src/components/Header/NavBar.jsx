@@ -1,7 +1,7 @@
 import React from 'react';
 import { CookingPot } from '@phosphor-icons/react'
-import Input from './Input';
-import IconsActions from './IconsActions';
+import Input from '../Search/Input';
+import IconsActions from '../IconsActions/IconsActions';
 
 const NavBar = () => {
   return (
