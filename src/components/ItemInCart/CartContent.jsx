@@ -1,5 +1,5 @@
 import React from 'react';
-import product from '../assets/product-1.svg'
+import product from '../../assets/product-1.svg'
 
 const CartContent = () => {
   return (

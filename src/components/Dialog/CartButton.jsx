@@ -5,15 +5,14 @@ import { BiCart } from 'react-icons/bi';
 
 const CartButton = () => {
   return (
-    <div>
       <Dialog.Root>
         <Dialog.Trigger
           type="button"
           className="bg-zinc-800 rounded-sm p-3 hover:bg-zinc-900/80 md:p-4"
         >
-          <button>
-            <BiCart size={27} color='white' />
-          </button>
+
+          <BiCart size={27} color='white' />
+
         </Dialog.Trigger>
 
         <Dialog.Portal>
@@ -33,7 +32,6 @@ const CartButton = () => {
         </Dialog.Portal>
 
       </Dialog.Root>
-    </div>
   );
 }
 
