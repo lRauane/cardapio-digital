@@ -4,8 +4,7 @@ const CartContent = () => {
   const { foodInCart, IncrementItem, DecrementItem, removeItem, total } = useCart();
 
   return (
-    <div className='flex flex-col gap-5'>
-     
+    <div className='flex flex-col gap-5'>  
         {foodInCart.length > 0 ? (
           foodInCart?.map((food) => (
             <div className='flex mt-5 gap-5' key={food.id}>
