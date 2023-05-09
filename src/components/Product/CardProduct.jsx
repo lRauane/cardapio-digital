@@ -26,6 +26,7 @@ const CardProduct = () => {
                   <h3 className="text-2xl pb-2 font-bold text-gray-700">
                     {food.name}
                   </h3>
+                  
                   <div className='border-b border-solid border-gray-400'></div>
                 </div>
                 <div className='flex items-center justify-around'>
