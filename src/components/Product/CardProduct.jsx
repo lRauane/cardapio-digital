@@ -4,15 +4,27 @@ import { FiCheck } from "react-icons/fi";
 import { useCard } from '../../Context/CardContext';
 import { useCart } from '../../Context/CartContext';
 
-const CardProduct = () => {
+const CardProduct = ({ selectedCategory }) => {
   const { card } = useCard();
   const { AddItemCart } = useCart();
+  const [filteredCard, setFilteredCard] = useState([]);
+
+  useEffect(() => {
+    if (selectedCategory === null) {
+      setFilteredCard(card);
+    } else {
+      const filteredItems = card.filter(
+        (item) => item.category.id === selectedCategory
+      );
+      setFilteredCard(filteredItems);
+    }
+  }, [card, selectedCategory]);
 
   return (
     <div className="bg-white">
       <div className="mx-auto px-5 py-6 sm:px-6 sm:py-24 lg:max-w-7xl">
         <div className=" grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-20">
-          {card.map(food => (
+          {filteredCard.map(food => (
             <div className="group relative" key={food.id}>
               <div className="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md lg:aspect-none relative">
                 <img src={food.image_url} alt='' className="

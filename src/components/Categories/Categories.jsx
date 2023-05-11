@@ -1,29 +1,45 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import api from '../../services/api';
 
-const Categories = () => {
-
+const Categories = ({ handleCategoryButtonClick }) => {
   const [categoriesItem, setCategoriesItem] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState(null);
 
   useEffect(() => {
     async function fetchApi() {
-      const response = await api.get("/categories")
-      setCategoriesItem(response.data)
+      const response = await api.get("/categories");
+      setCategoriesItem(response.data);
     }
-    fetchApi()
+    fetchApi();
   }, []);
 
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category);
+  };
 
   return (
     <div className='flex w-full items-center mt-8 justify-center flex-wrap gap-5 lg:gap-20'>
-      <button className='bg-yellow-500 p-3 w-52 text-white rounded-lg'>Todos</button>
-      {categoriesItem.map(categorie => (
-        <button key={categorie.id} className='bg-yellow-500/80 p-3 w-52 text-white rounded-lg'>{categorie.title}</button>
-      ))
-      }
+      <button
+        className={`p-3 w-52 text-white rounded-lg ${
+          selectedCategory === null ? 'bg-yellow-700' : 'bg-yellow-500'
+        }`}
+        onClick={() => handleCategoryButtonClick(null)}
+      >
+        Todos
+      </button>
+      {categoriesItem.map((category) => (
+        <button
+          key={category.id}
+          className={`p-3 w-52 text-white rounded-lg ${
+            selectedCategory === category.id ? 'bg-yellow-700' : 'bg-yellow-500'
+          }`}
+          onClick={() => handleCategoryButtonClick(category.id)}
+        >
+          {category.title}
+        </button>
+      ))}
     </div>
   );
-}
+};
 
 export default Categories;
