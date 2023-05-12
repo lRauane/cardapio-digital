@@ -1,5 +1,6 @@
 import React, { createContext, useState, useContext, useEffect } from "react";
 import { getFoods } from "../services/api";
+import { ToastContainer } from "react-toastify";
 
 const CardContext = createContext();
 
@@ -17,6 +18,7 @@ export function CardProvider({ children }) {
 
   return (
     <CardContext.Provider value={{ card, setcard }}>
+      <ToastContainer />
       {children}
     </CardContext.Provider>
   )

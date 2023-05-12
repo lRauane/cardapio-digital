@@ -1,5 +1,9 @@
 import React, { createContext, useState, useContext } from 'react'
 import { useCard } from './CardContext'
+// Importe o ToastContainer do react-toastify
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const CartContext = createContext();
 
 export function CartProvider({ children }) {
@@ -26,6 +30,7 @@ export function CartProvider({ children }) {
       sumFoodReduce = selectedCardTotalValue.reduce((sum, count) => sum + count, 0);
       setTotal(sumFoodReduce);
       setSubTotal(sumFoodReduce)
+    
     } else {
       if (selectedFood) {
         selectedFood.inCart = true;
@@ -41,6 +46,9 @@ export function CartProvider({ children }) {
       setTotal(sumFoodReduce)
       setSubTotal(sumFoodReduce)
     }
+
+    toast.success('Item adicionado ao carrinho com sucesso!');
+    
   }
 
   function IncrementItem(id) {
@@ -98,6 +106,8 @@ export function CartProvider({ children }) {
     setFoodInCart(foodRemove);
     setTotal(sumFoodReduce)
     setSubTotal(sumFoodReduce)
+    
+    toast.error('Item removido do carrinho!');
 
   }
 

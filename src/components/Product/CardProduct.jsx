@@ -32,11 +32,11 @@ const CardProduct = ({ selectedCategory }) => {
               </div>
               <div className="mt-2 gap-2 flex flex-col">
                 <div>
-                  <h3 className="text-2xl pb-2 font-bold text-gray-700">
+                  <h3 className="text-2xl pb-2 font-bold text-gray-700 border-b border-solid border-gray-400">
                     {food.name}
                   </h3>
                   
-                  <div className='border-b w-[250px] border-solid border-gray-400'></div>
+                  <div className=''></div>
                 </div>
                 <div className='flex items-center justify-evenly'>
                   <span className="mt-1 text-base md:text-lg text-gray-500">R$ {food.price}.00</span>

@@ -24,7 +24,7 @@ const CartContent = () => {
               </div>
             </div>
           ))
-        ) : <p>carrinho vazio!</p>}
+        ) : <p className='text-red-500 mt-2 text-xl'>carrinho vazio!</p>}
 
 
         <p>Valor total: <span className='text-red-500'>R$ {total}</span></p>

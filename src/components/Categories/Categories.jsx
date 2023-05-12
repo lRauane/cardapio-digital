@@ -15,6 +15,7 @@ const Categories = ({ handleCategoryButtonClick }) => {
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
+    handleCategoryButtonClick(category); 
   };
 
   return (
@@ -23,7 +24,7 @@ const Categories = ({ handleCategoryButtonClick }) => {
         className={`p-3 w-52 text-white rounded-lg ${
           selectedCategory === null ? 'bg-yellow-700' : 'bg-yellow-500'
         }`}
-        onClick={() => handleCategoryButtonClick(null)}
+        onClick={() => handleCategoryClick(null)}
       >
         Todos
       </button>
@@ -33,7 +34,7 @@ const Categories = ({ handleCategoryButtonClick }) => {
           className={`p-3 w-52 text-white rounded-lg ${
             selectedCategory === category.id ? 'bg-yellow-700' : 'bg-yellow-500'
           }`}
-          onClick={() => handleCategoryButtonClick(category.id)}
+          onClick={() => handleCategoryClick(category.id)} 
         >
           {category.title}
         </button>

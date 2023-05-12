@@ -64,9 +64,12 @@ const Input = () => {
         searchResults.map(recipe => (
 
           <button key={recipe.id} className="bg-white w-[300px] rounded-lg text-black shadow-md shadow-black/40 p-4 absolute z-50">
-            <div className='flex'>
+            <div className='flex gap-5'>
               <img src={recipe.image_url} className='object-center h-full w-[100px]' />
+              <div className='flex flex-col'>
               <h2 className="text-lg font-bold">{recipe.name}</h2>
+              <span>R${recipe.price}.00</span>
+              </div>
             </div>
           </button>
 
