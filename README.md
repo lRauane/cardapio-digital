@@ -59,7 +59,7 @@ O layout da aplicação está disponível no Figma:
 ### Web <a name="layout-web"></a>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Screenshot web 1" src="https://github.com/lRauane/cardapio-digital/assets/102835801/263ffcca-70f3-4b73-8cff-ba770ea9e344">
+  <img alt="Screenshot web 1" src="https://github.com/lRauane/cardapio-digital/assets/102835801/d335c5c2-294f-441f-9f24-7229007bd345">
 </p>
 
 
