@@ -1,7 +1,8 @@
-import { useCart } from '../../Context/CartContext';
+import {useContext} from 'react';
+import { CartContext } from '../../Context/CartContext';
 
-const CartContent = () => {
-  const { foodInCart, IncrementItem, DecrementItem, removeItem, total } = useCart();
+export function CartContent (){
+  const { foodInCart, IncrementItem, DecrementItem, removeItem, total } = useContext(CartContext);
 
   return (
     <div className='flex flex-col gap-5'>  
@@ -12,10 +13,10 @@ const CartContent = () => {
               <div>
                 <h2 className='font-bold'>{food.name}</h2>
                 <p>R$ {food.price}</p>
-                <div class="flex gap-3 mt-3 items-center">
-                  <button class="bg-zinc-800 p-2 text-white w-10" onClick={() => DecrementItem(food.id)}>-</button>
-                  <div class="border p-2 w-10 text-center rounded-sm ">{food.count}</div>
-                  <button class="bg-zinc-800 p-2 w-10  text-white" onClick={() => IncrementItem(food.id)}>+</button>
+                <div className="flex gap-3 mt-3 items-center">
+                  <button className="bg-zinc-800 p-2 text-white w-10" onClick={() => DecrementItem(food.id)}>-</button>
+                  <div className="border p-2 w-10 text-center rounded-sm ">{food.count}</div>
+                  <button className="bg-zinc-800 p-2 w-10  text-white" onClick={() => IncrementItem(food.id)}>+</button>
                   <button onClick={() => removeItem(food.id)}>Remover</button>
 
                 </div>
@@ -33,5 +34,3 @@ const CartContent = () => {
     </div>
   );
 }
-
-export default CartContent;

@@ -1,9 +1,10 @@
-import React from 'react';
 import { CookingPot } from '@phosphor-icons/react'
-import Input from '../Search/Input';
-import IconsActions from '../IconsActions/IconsActions';
+import {Input} from '../Search/Input';
+import {IconsActions} from '../IconsActions/IconsActions';
 
-const NavBar = () => {
+export function NavBar 
+() 
+ {
   return (
     <div>
       <nav className='flex flex-col md:flex-row w-full items-center p-5 justify-around gap-5'>
@@ -19,4 +20,5 @@ const NavBar = () => {
   );
 }
 
-export default NavBar;
+
+

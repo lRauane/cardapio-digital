@@ -1,0 +1,176 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "name": "Pastel de carne",
+      "description": "Massa crocante e recheado com carne moída temperada na medida certa, esse pastel é irresistível.",
+      "price": 5.0,
+      "image_url": "https://img.freepik.com/fotos-gratis/vista-inferior-de-penovani-khachapuri-na-placa-de-madeira-na-mesa-vermelha-escura_140725-129977.jpg?w=996&t=st=1681563927~exp=1681564527~hmac=3237a3594cbebb47b0fb50af09da130b58ad01866ebc77833feb9720632d721a",
+      "inCart": false,
+      "count": 1,
+      "category": {
+        "id": 1,
+        "title": "Salgados"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Crispy de Cebola",
+      "description": "O Hambúrguer com Crispy de Cebola é um suculento hambúrguer com queijo derretido, alface e um molho especial. O toque especial fica por conta do crispy de cebola, uma camada crocante de cebola empanada que dá um sabor delicioso ao lanche.",
+      "price": 20.0,
+      "image_url": "https://img.freepik.com/fotos-gratis/hamburguer-de-vista-frontal-em-um-carrinho_141793-15542.jpg?w=996&t=st=1681564118~exp=1681564718~hmac=ee2d023e9c7a69f205bcc065c417e79cf56083500f8adb371392b1860efd30ee",
+      "inCart": false,
+      "count": 1,
+      "category": {
+        "id": 2,
+        "title": "hambúrguer artesanal"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Smash duplo",
+      "description": "o tradicional hambúrguer duplo ganha complementos como o bacon em fatias, três queijos diferentes e maionese.",
+      "price": 20.0,
+      "image_url": "https://img.freepik.com/fotos-gratis/hamburguer-de-carne-com-faca-na-vista-lateral-superior_141793-2805.jpg?w=740&t=st=1681564221~exp=1681564821~hmac=3676c7a610b0d72183eb45d3917698c14991573ec5ea4241442407562b05bbc4",
+      "inCart": false,
+      "count": 1,
+      "category": {
+        "id": 2,
+        "title": "hambúrguer artesanal"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Duplo com Chipotle",
+      "description": "O Duplo com Maionese Chipotle é um hambúrguer com dois suculentos hambúrgueres de carne bovina, queijo derretido, alface e tomate.",
+      "price": 20.0,
+      "image_url": "https://img.freepik.com/fotos-gratis/closeup-tiro-de-um-delicioso-hamburguer-com-carne-queijo-amarelo-e-bacon_181624-34844.jpg?w=996&t=st=1681564311~exp=1681564911~hmac=0fc353b85ec35dc64a50a8a9ae3a4b0beb4ca80398894796a8a960a756375a4c",
+      "inCart": false,
+      "count": 1,
+      "category": {
+        "id": 2,
+        "title": "hambúrguer artesanal"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Coxinha de frango",
+      "description": "Feita com massa de batata e farinha de trigo, recheada com frango desfiado temperado e catupiry.",
+      "price": 4.0,
+      "image_url": "https://img.freepik.com/fotos-gratis/vista-frontal-deliciosa-composicao-da-comida-brasileira_23-2148739224.jpg?w=996&t=st=1681564632~exp=1681565232~hmac=5dba07a0021c6728c8a30f1e6ab2a9aa576abacd70c2e61783bd1e802a4429e8",
+      "inCart": false,
+      "count": 1,
+      "category": {
+        "id": 1,
+        "title": "Salgados"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Pudim tradicional",
+      "description": "Feito com leite, açúcar, ovos e baunilha, sua textura cremosa e macia derrete na boca, deixando um sabor doce e suave que agrada a todos os paladares.",
+      "price": 5.0,
+      "image_url": "https://img.freepik.com/fotos-gratis/creme-de-caramelo-no-prato-branco-sobremesa-popular-no-cafe_1428-99.jpg?w=996&t=st=1681564490~exp=1681565090~hmac=db6d9e9ac19e66401d9bfb13037c1cb81a06f481b1bd8a22776b9710525cc2a2",
+      "inCart": false,
+      "count": 1,
+      "category": {
+        "id": 3,
+        "title": "Sobremesas"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Pizza de calambresa",
+      "description": "É feita com uma massa fina e crocante, molho de tomate e queijo derretido, coberta com fatias de linguiça calabresa, cebola e azeitonas.",
+      "price": 25.0,
+      "image_url": "https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+      "inCart": false,
+      "count": 1,
+      "category": { "id": 4, "title": "Pizzas" }
+    },
+    {
+      "id": 8,
+      "name": "Petit gateau",
+      "description": "um bolinho de chocolate com casca crocante e recheio cremoso, servido quente.",
+      "price": 5.0,
+      "image_url": "https://img.freepik.com/fotos-gratis/vista-lateral-do-cheesecake-de-chocolate-com-kumquat-servido-com-cha_141793-2630.jpg?w=740&t=st=1696860709~exp=1696861309~hmac=6c06d18a825d0e9e1daa9b00c26326db9520c17b80c2ea82511210d6f06e5105",
+      "inCart": false,
+      "count": 1,
+      "category": {
+        "id": 3,
+        "title": "Sobremesas"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Enroladinho de salsicha",
+      "description": "É feito com uma massa de farinha de trigo e recheado com uma salsicha",
+      "price": 2.0,
+      "image_url": "https://images.unsplash.com/photo-1619445832874-8b153f60ae78?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80",
+      "inCart": false,
+      "count": 1,
+      "category": {
+        "id": 1,
+        "title": "Salgados"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Bolo de chocolate",
+      "description": "É feito com uma massa fofa e macia de chocolate, podendo ser acompanhado por cobertura de brigadeiro, ganache ou chantilly.",
+      "price": 4.0,
+      "image_url": "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=803&q=80",
+      "inCart": false,
+      "count": 1,
+      "category": {
+        "id": 3,
+        "title": "Sobremesas"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Pizza 3 queijos",
+      "description": "A pizza de três queijos é uma deliciosa combinação de sabores que vai fazer seu paladar se deliciar. Cada mordida é uma explosão de queijos derretidos, criando uma harmonia perfeita entre texturas e gostos.",
+      "price": 25.0,
+      "image_url": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=781&q=80",
+      "inCart": false,
+      "count": 1,
+      "category": {
+        "id": 4,
+        "title": "Pizzas"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Pizza portuguesa",
+      "description": "A pizza portuguesa é uma verdadeira homenagem aos sabores e ingredientes tradicionais da culinária portuguesa. Cada pedaço é uma viagem aos aromas e paladares únicos dessa deliciosa combinação.",
+      "price": 25.0,
+      "image_url": "https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "inCart": false,
+      "count": 1,
+      "category": {
+        "id": 4,
+        "title": "Pizzas"
+      }
+    }
+  ],
+  
+  "categories": [
+    {
+      "id": 1,
+      "title": "Salgados"
+    },
+    {
+      "id": 2,
+      "title": "hambúrguer artesanal"
+    },
+    {
+      "id": 3,
+      "title": "Sobremesas"
+    },
+    {
+      "id": 4,
+      "title": "Pizzas"
+    }
+  ]
+}

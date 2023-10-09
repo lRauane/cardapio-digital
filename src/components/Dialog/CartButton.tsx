@@ -1,9 +1,9 @@
 import * as Dialog from '@radix-ui/react-dialog';
-import CartContent from '../ItemInCart/CartContent';
+import {CartContent} from '../ItemInCart/CartContent';
 import { X } from '@phosphor-icons/react';
 import { BiCart } from 'react-icons/bi';
 
-const CartButton = () => {
+export function CartButton () {
   return (
     <Dialog.Root>
       <Dialog.Trigger
@@ -31,5 +31,3 @@ const CartButton = () => {
     </Dialog.Root>
   );
 }
-
-export default CartButton;

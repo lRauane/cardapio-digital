@@ -1,7 +1,6 @@
-import React from 'react';
 import BannerImage from '../../assets/banner.svg'
 
-const Banner = () => {
+export function Banner() {
   return (
     <div className='relative bg-cover bg-center h-64 mt-3' style={{
       backgroundImage: `url(${BannerImage})`,
@@ -19,5 +18,3 @@ const Banner = () => {
     </div>
   );
 }
-
-export default Banner;
